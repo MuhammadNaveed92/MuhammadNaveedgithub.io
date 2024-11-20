@@ -1,3 +1,41 @@
+const menuIcon = document.getElementById('menu-icon');
+const navAside = document.getElementById('nav-aside');
+const menuOverlay = document.querySelector('.menu-overlay');
+const navLinks = document.querySelectorAll('.nav__link');
+
+function toggleNav() {
+    navAside.classList.toggle('open');
+    menuOverlay.style.opacity = navAside.classList.contains('open') ? '1' : '0';
+    menuOverlay.style.transform = navAside.classList.contains('open') ? 'translateX(0)' : 'translateX(100%)';
+    menuIcon.classList.toggle('close-icon');
+}
+
+function closeNav() {
+    navAside.classList.remove('open');
+    menuOverlay.style.opacity = '0';
+    menuOverlay.style.transform = 'translateX(100%)';
+}
+
+// Toggle navigation on menu icon click
+menuIcon.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click propagation to document
+    toggleNav();
+});
+
+// Close navigation on clicking a navigation link
+navLinks.forEach(link => {
+    link.addEventListener('click', closeNav);
+});
+
+// Close navigation when clicking outside of it
+document.addEventListener('click', (event) => {
+    if (!navAside.contains(event.target) && navAside.classList.contains('open')) {
+        closeNav();
+    }
+});
+
+
+
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }

@@ -5,39 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVEED</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="saas/style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
 </head>
 
 <body>
     <main id="main-page" class="page-container">
-        <aside id="nav-aside" role="complementary" class="js-fullheight">
-            <nav id="nav-main-menu" role="navigation" class="nav-asi">
+        <aside id="nav-aside" role="complementary" class="nav-aside js-fullheight">
+            <nav id="nav-main-menu" role="navigation" class="nav">
                 <div id="nav-ul" class="collapse">
-                    <ul>
-                        <li class="nav-li active"><a href="#home" data-nav-section="home">01 top</a></li>
-                        <li class="nav-li"><a href="#2" data-nav-section="about">02 About me</a></li>
-                        <li class="nav-li"> <a href="#3" data-nav-section="skills">03 Skills</a></li>
-                        <li class="nav-li"> <a href="#4" data-nav-section="experience">04 Experience</a></li>
-                        <li class="nav-li"><a href="#5" data-nav-section="projects">05 projects</a></li>
-                        <li class="nav-li"><a href="#6" data-nav-section="work">06 how i work</a></li>
-                        <li class="nav-li"><a href="#7" data-nav-section="blog">07 Blog</a></li>
-                        <li class="nav-li"><a href="#8" data-nav-section="contact">08 Contact</a></li>
+                    <ul class="nav__list">
+                        <li class="nav__item active"><a class="nav__link" href="#home" data-nav-section="home">01
+                                top</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#2" data-nav-section="about">02 About me</a>
+                        </li>
+                        <li class="nav__item"> <a class="nav__link" href="#3" data-nav-section="skills">03 Skills</a>
+                        </li>
+                        <li class="nav__item"> <a class="nav__link" href="#4" data-nav-section="experience">04
+                                Experience</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#5" data-nav-section="projects">05 projects</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#6" data-nav-section="work">06 how i work</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#7" data-nav-section="blog">07 Blog</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#8" data-nav-section="contact">08 Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
 
             <div class="nav-footer">
-                <ul>
-                    <li><a href="#">muhamnad@naveed.com</a></li>
-                    <li><a href="tel:03103317975">03103317975</a></li>
+                <ul class="nav-footer__list">
+                    <li class="nav-footer__item"><a class="nav-footer__link" href="#">muhamnad@naveed.com</a></li>
+                    <li class="nav-footer__item"><a class="nav-footer__link" href="tel:03103317975">03103317975</a></li>
                 </ul>
             </div>
 
         </aside>
-    
-        <section id="home" class="fullheight pt-100" data-section="home">
+        <div class="menu-icon-wrapper">
+            <div id="menu-icon" class="menu-icon">
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+            </div>
+        </div>
+        <div class="menu-overlay"></div>
+        <section id="home" class="fullheight pt-md-100" data-section="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12  mb-sm-5">
@@ -63,7 +77,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-sm-center justify-content-lg-end mt-sm-5">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-sm-center justify-content-lg-end mt-sm-5">
                         <div class="circle-container">
                             <div class="author-img">
                                 <div class="waves-top"><span></span><span></span><span></span><span></span></div><img
@@ -128,10 +143,12 @@
             </div>
         </section>
         <div class="container">
-            <div class="next-ch">
-                <span class="next-ch__next">next chapter</span>
-                <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
-            </div>
+            <a href="#3" class="next-ch-wrap">
+                <div class="next-ch">
+                    <span class="next-ch__next">next chapter</span>
+                    <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
+                </div>
+            </a>
         </div>
         <section class="skills-section" id="3">
             <div class="container">
@@ -141,168 +158,168 @@
                             <span class="title-overlay-text">attainments</span>
                             <div class="title__tag-line">Highlight My Expertise in:</div>
                             <div class="title__text">Developer skills</div>
-                           
+
                         </div>
                     </div>
                 </div>
             </div>
-           <div class="container">
-            <div class="skills">
-                <div class="htmlProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>html5</p>
-                    <p>95%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar htmlBar"></span>
+            <div class="container">
+                <div class="skills">
+                    <div class="htmlProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>html5</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar htmlBar"></span>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="cssProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>Css3</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar cssBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jsProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>JavaScript</p>
+                            <p>45%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar jsBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bootstrapProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>bootstrap</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar bootstrapBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saasProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>Saas</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar saasBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bemProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>bem</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar bemBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pugProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>pug</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar pugBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xdProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>Adobe XD</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar xdBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="psProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>Adobe Photoshop</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar psBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="figmaProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>Figma</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar figmaBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seoProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>seo</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar seoBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strapiProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>strapi cms</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar strapiBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webflowProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>webflow</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar webflowBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wordpressProg ProgWidth">
+                        <div class="skills__desc">
+                            <p>wordpress</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="pp">
+                            <div class="skillDiv">
+                                <span class="skillBar wordpressBar"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cssProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>Css3</p>
-                    <p>85%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar cssBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="jsProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>JavaScript</p>
-                    <p>45%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar jsBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="bootstrapProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>bootstrap</p>
-                    <p>85%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar bootstrapBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="saasProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>Saas</p>
-                    <p>70%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar saasBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="bemProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>bem</p>
-                    <p>80%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar bemBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pugProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>pug</p>
-                    <p>70%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar pugBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="xdProg ProgWidth">
-                  <div class="skills__desc">
-                    <p>Adobe XD</p>
-                    <p>35%</p>
-                  </div>
-                  <div class="pp">
-                    <div class="skillDiv">
-                      <span class="skillBar xdBar"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="psProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>Adobe Photoshop</p>
-                      <p>35%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar psBar"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="figmaProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>Figma</p>
-                      <p>35%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar figmaBar"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="seoProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>seo</p>
-                      <p>80%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar seoBar"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="strapiProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>strapi cms</p>
-                      <p>35%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar strapiBar"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="webflowProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>webflow</p>
-                      <p>35%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar webflowBar"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wordpressProg ProgWidth">
-                    <div class="skills__desc">
-                      <p>wordpress</p>
-                      <p>85%</p>
-                    </div>
-                    <div class="pp">
-                      <div class="skillDiv">
-                        <span class="skillBar wordpressBar"></span>
-                      </div>
-                    </div>
-                  </div>
-              </div>
             </div>
             <div class="container">
                 <div class="row align-items-center">
@@ -325,25 +342,27 @@
                             <figure class="chart" data-percent="50">
                                 <figcaption>english</figcaption>
                                 <svg>
-                                  <circle class="outer" cx="115" cy="76" r="72" transform="rotate(-90, 95, 95)"/>
+                                    <circle class="outer" cx="115" cy="76" r="72" transform="rotate(-90, 95, 95)" />
                                 </svg>
-                              </figure>
-                              <figure class="chart" data-percent="75">
+                            </figure>
+                            <figure class="chart" data-percent="75">
                                 <figcaption>urdu</figcaption>
                                 <svg>
-                                  <circle class="outer" cx="115" cy="76" r="72" transform="rotate(-90, 95, 95)"/>
+                                    <circle class="outer" cx="115" cy="76" r="72" transform="rotate(-90, 95, 95)" />
                                 </svg>
-                              </figure>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="container">
-            <div class="next-ch">
-                <span class="next-ch__next">next chapter</span>
-                <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
-            </div>
+            <a href="#4" class="next-ch-wrap">
+                <div class="next-ch">
+                    <span class="next-ch__next">next chapter</span>
+                    <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
+                </div>
+            </a>
         </div>
         <section class="experience" id="4">
             <div class="container">
@@ -397,10 +416,12 @@
             </div>
         </section>
         <div class="container">
-            <div class="next-ch">
-                <span class="next-ch__next">next chapter</span>
-                <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
-            </div>
+            <a href="#5" class="next-ch-wrap">
+                <div class="next-ch">
+                    <span class="next-ch__next">next chapter</span>
+                    <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
+                </div>
+            </a>
         </div>
         <section class="projects" id="5">
             <div class="container">
@@ -455,7 +476,8 @@
                         <div class="box">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <div class="projects__image"><img src="images/leatherjacketblack.png" alt="the-beach"></div>
+                                    <div class="projects__image"><img src="images/leatherjacketblack.png"
+                                            alt="the-beach"></div>
                                 </div>
                             </div>
                         </div>
@@ -468,7 +490,8 @@
                         <div class="box">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <div class="projects__image"><img src="images/pentaexpress.png" alt="penta express"></div>
+                                    <div class="projects__image"><img src="images/pentaexpress.png" alt="penta express">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -481,7 +504,8 @@
                         <div class="box">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <div class="projects__image"><img src="images/sadia life.png" alt="sadia life"></div>
+                                    <div class="projects__image"><img src="images/sadia life.png" alt="penta express">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -494,7 +518,8 @@
                         <div class="box">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <div class="projects__image"><img src="images/oskarjacket.png" alt="oskar jacket"></div>
+                                    <div class="projects__image"><img src="images/oskarjacket.png" alt="penta express">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -507,7 +532,8 @@
                         <div class="box">
                             <div class="card">
                                 <div class="card__wrap">
-                                    <div class="projects__image"><img src="images/artviodesign.png" alt="artviodesign"></div>
+                                    <div class="projects__image"><img src="images/artviodesign.png" alt="penta express">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -555,7 +581,9 @@
                             <div class="row">
                                 <div class="col-lg-9 col-md-12">
                                     <h4 class="projects__title">adcb</h4>
-                                    <p class="projects__desc">the ADCB Personal Banking website serves as a comprehensive digital hub for personal finance management, combining aesthetics and functionality to deliver exceptional user service.</p>
+                                    <p class="projects__desc">the ADCB Personal Banking website serves as a
+                                        comprehensive digital hub for personal finance management, combining aesthetics
+                                        and functionality to deliver exceptional user service.</p>
                                     <h4 class="projects__title">Project Goals</h4>
                                     <p class="projects__desc"></p>
                                     <h4 class="projects__title">Challenges and Solutions</h4>
@@ -696,8 +724,7 @@
                     </div>
                     <div class="projects__card-data" id="card-data-3">
                         <div class="container-fluid">
-                            <a href="https://www.thebeach.ae/en" target="_blank"
-                                class="projects projects__overlay-img">
+                            <a href="https://www.thebeach.ae/en" target="_blank" class="projects projects__overlay-img">
                                 <img src="images/the-beach-overlay.png" alt="adcb" class="projects__obp-top">
                                 <img src="images/the-beach-overlay.png" alt="adcb" class="projects__obp-center">
                                 <img src="images/the-beach-overlay.png" alt="adcb" class="projects__obp-bottom">
@@ -710,7 +737,10 @@
                             <div class="row">
                                 <div class="col-lg-9 col-md-12">
                                     <h4 class="projects__title">the beach</h4>
-                                    <p class="projects__desc">The Beach website provides information about the destination, including its attractions, amenities, and events. It is designed to attract visitors and enhance their experience by providing pertinent information.</p>
+                                    <p class="projects__desc">The Beach website provides information about the
+                                        destination, including its attractions, amenities, and events. It is designed to
+                                        attract visitors and enhance their experience by providing pertinent
+                                        information.</p>
                                     <h4 class="projects__title">Project Goals</h4>
                                     <p class="projects__desc"></p>
                                     <h4 class="projects__title">Challenges and Solutions</h4>
@@ -722,12 +752,18 @@
                                     <h4 class="projects__title">Key Features:</h4>
                                     <ul>
                                         <li>
-                                            <p class="projects__key-fea"><span>Responsive Design:</span>The website must be fully responsive, ensuring that it looks and functions well on both desktop and mobile devices. Use of CSS frameworks like Bootstrap can facilitate this.</p>
+                                            <p class="projects__key-fea"><span>Responsive Design:</span>The website must
+                                                be fully responsive, ensuring that it looks and functions well on both
+                                                desktop and mobile devices. Use of CSS frameworks like Bootstrap can
+                                                facilitate this.</p>
                                         </li>
                                         <li>
-                                            <p class="projects__key-fea"><span>Interactive Elements:</span>- Image galleries or slider views showcasing photos of the beach and activities.
-                                                - Interactive maps pointing out key locations, services, and amenities within the area.
-                                                - Event calendars highlighting upcoming activities with the option to filter by date/type.</p>
+                                            <p class="projects__key-fea"><span>Interactive Elements:</span>- Image
+                                                galleries or slider views showcasing photos of the beach and activities.
+                                                - Interactive maps pointing out key locations, services, and amenities
+                                                within the area.
+                                                - Event calendars highlighting upcoming activities with the option to
+                                                filter by date/type.</p>
                                         </li>
                                         <li>
                                             <p class="projects__key-fea"><span>Visual Elements:</span>High-quality
@@ -735,7 +771,10 @@
                                                 calls-to-action guide users towards their banking needs.</p>
                                         </li>
                                         <li>
-                                            <p class="projects__key-fea"><span>Call-to-Action Buttons:</span>Strategically placed buttons prompting users to learn more, reserve spots, sign up for a newsletter, or follow on social media.</p>
+                                            <p class="projects__key-fea"><span>Call-to-Action
+                                                    Buttons:</span>Strategically placed buttons prompting users to learn
+                                                more, reserve spots, sign up for a newsletter, or follow on social
+                                                media.</p>
                                         </li>
                                         <li>
                                             <p class="projects__key-fea"><span>Security Information:</span>Dedicated
@@ -766,19 +805,21 @@
                         </div>
                         <span class="projects__close-btn"><i class="fa-solid fa-x"></i></span>
                     </div>
-                    
+
                     <div class="projects__bg-overlay"></div>
                 </div>
-                <a id="loadMoreBtn" id="scrollToProjectsBtn" class="sp-btn__link m-auto"><span class="sp-btn__text">Load More</a>
+                <a id="loadMoreBtn" id="scrollToProjectsBtn" class="sp-btn__link m-auto"><span class="sp-btn__text">Load
+                        More</a>
             </div>
         </section>
-        <!-- </div> -->
-
+        
         <div class="container">
-            <div class="next-ch mb-150">
-                <span class="next-ch__next">next chapter</span>
-                <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
-            </div>
+            <a href="#6" class="next-ch-wrap">
+                <div class="next-ch">
+                    <span class="next-ch__next">next chapter</span>
+                    <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
+                </div>
+            </a>
         </div>
         <section class="work-pro" id="6">
             <div class="container">
@@ -845,11 +886,13 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="next-ch mb-150">
-                <span class="next-ch__next">next chapter</span>
-                <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
-            </div>
+        <div class="container  mb-150">
+            <a href="#8" class="next-ch-wrap">
+                <div class="next-ch">
+                    <span class="next-ch__next">next chapter</span>
+                    <span class="next-ch__icon"><i class="fa-solid fa-arrow-turn-down"></i></span>
+                </div>
+            </a>
         </div>
         <section class="contact" id="8">
             <div class="container">
@@ -895,7 +938,8 @@
                             <button type="submit" class="contact-fbtn">
                                 <div class="waves-top waves-top-md"><span></span><span></span><span></span><span></span>
                                 </div>submit<div class="waves-bottom-md waves-bottom">
-                                    <span></span><span></span><span></span><span></span></div>
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
                             </button>
                         </form>
                     </div>
@@ -904,7 +948,7 @@
         </section>
 
 
-      
+
 
     </main>
 
